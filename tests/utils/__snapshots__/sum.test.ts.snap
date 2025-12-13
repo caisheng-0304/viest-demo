@@ -1,0 +1,17 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`tuUpperCase 1`] = `
+{
+  "email": "zhangsan@example.com",
+  "id": 2,
+  "metadata": {
+    "createdAt": "2024-01-01",
+    "lastLogin": "2024-09-09",
+  },
+  "name": "张三",
+  "roles": [
+    "admin",
+    "user",
+  ],
+}
+`;
