@@ -1,0 +1,29 @@
+name: Vitest CI
+
+on:
+  pull_request:
+    branches:
+      - main   # 重点：只有 PR 指向 main 才触发
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+          cache: npm
+
+      - name: Install dependencies
+        run: npm install
+        # 如果你用 pnpm：pnpm install
+        # 如果你用 yarn：yarn install
+
+      - name: Run Vitest
+        run: npm run test
+        # 对应 package.json 里的 vitest 命令
