@@ -23,6 +23,9 @@ initStoreNotification()
 
 initMobileNotification()
 // #endregion
+function init() {
+  console.log("快照文件")
+}
 </script>
 
 <template>
