@@ -1,0 +1,20 @@
+<script setup lang="ts">
+import { ref } from "vue"
+
+const show = ref(false)
+
+function onClick() {
+  show.value = true
+}
+</script>
+
+<template>
+  <div>
+    <div v-if="show">
+      vitest
+    </div>
+    <div @dbclick="onClick" data-testid="button">
+      按钮
+    </div>
+  </div>
+</template>
