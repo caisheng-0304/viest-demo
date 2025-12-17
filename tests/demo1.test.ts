@@ -69,9 +69,9 @@ it("test 数字", () => {
 })
 
 it("快照", () => {
-  // const data = {
-  //   foo: Array.from(new Set(["bar", "snapshot"]))
-  // }
+  const data = {
+    foo: Array.from(new Set(["bar", "snapshot"]))
+  }
   // expect(data).toMatchInlineSnapshot(`{
   //   "foo": Set {
   //     "bar",
